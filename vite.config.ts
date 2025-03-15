@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react(), generouted()],
     base: env.VITE_BASE_URL,
     server: {
+      allowedHosts: ['.strudel.2i2c.cloud'],
       port: 5175,
       strictPort: true,
     },
